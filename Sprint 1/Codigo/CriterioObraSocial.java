@@ -1,5 +1,5 @@
 public class CriterioObraSocial implements Criterio {
-        String OS;
+       private String OS;
 
     public CriterioObraSocial(String OS) {
         this.OS = OS;
