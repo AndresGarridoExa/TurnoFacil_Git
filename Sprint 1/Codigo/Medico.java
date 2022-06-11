@@ -1,4 +1,4 @@
-{
+public class Medico {
     int DNI;
     String nombre;
     String apellido;
