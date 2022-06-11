@@ -1,16 +1,16 @@
 {
     int DNI;
     String nombre;
-    String Apellido;
+    String apellido;
     String especialidad;
     String obraSocial;
-    String dias;
-    String horarios;
+    String dias; //puede ser lista
+    String horarios; //puede ser lista
 
     public Medico(int DNI, String nombre, String apellido, String especialidad, String obraSocial, String dias, String horarios) {
         this.DNI = DNI;
         this.nombre = nombre;
-        Apellido = apellido;
+        this.apellido = apellido;
         this.especialidad = especialidad;
         this.obraSocial = obraSocial;
         this.dias = dias;
@@ -42,11 +42,11 @@
     }
 
     public String getApellido() {
-        return Apellido;
+        return apellido;
     }
 
     public void setApellido(String apellido) {
-        Apellido = apellido;
+        this.apellido = apellido;
     }
 
     public String getEspecialidad() {
