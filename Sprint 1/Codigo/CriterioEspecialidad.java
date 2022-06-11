@@ -1,5 +1,5 @@
 public class CriterioEspecialidad implements Criterio{
-    String esp;
+    private String esp;
 
     public CriterioEspecialidad(String esp) {
         this.esp = esp;
