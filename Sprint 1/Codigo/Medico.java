@@ -1,16 +1,13 @@
-public class Medico {
-    int DNI;
-    String nombre;
-    String apellido;
+public class Medico extends Persona {
     String especialidad;
     String obraSocial;
     String dias; //puede ser lista
     String horarios; //puede ser lista
 
-    public Medico(int DNI, String nombre, String apellido, String especialidad, String obraSocial, String dias, String horarios) {
-        this.DNI = DNI;
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Medico(int dni, String nombre, String apellido, String especialidad, String obraSocial, String dias, String horarios) {
+    	super.dni= dni;
+    	super.nombre=nombre;
+    	super.apellido=apellido;
         this.especialidad = especialidad;
         this.obraSocial = obraSocial;
         this.dias = dias;
@@ -23,30 +20,6 @@ public class Medico {
 
     public void setObraSocial(String obraSocial) {
         this.obraSocial = obraSocial;
-    }
-
-    public int getDNI() {
-        return DNI;
-    }
-
-    public void setDNI(int DNI) {
-        this.DNI = DNI;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getEspecialidad() {
@@ -72,5 +45,4 @@ public class Medico {
     public void setHorarios(String horarios) {
         this.horarios = horarios;
     }
-
 }

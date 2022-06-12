@@ -1,49 +1,22 @@
 import java.util.ArrayList;
 
-public class Paciente {
-    int DNI;
-    String nombre;
-    String apellido;
+public class Paciente extends Persona {
     String direc;
-    int Tel;
+    int tel;
     String email;
     String obraSocial;
     int nroAfiliado;
     ArrayList<Turno> turnos;
 
-    public Paciente(int DNI, String nombre, String apellido, String direc, int tel, String email, String obraSocial, int nroAfiliado) {
-        this.DNI = DNI;
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Paciente(int dni, String nombre, String apellido, String direc, int tel, String email, String obraSocial, int nroAfiliado) {
+    	super.dni= dni;
+    	super.nombre=nombre;
+    	super.apellido=apellido;
         this.direc = direc;
-        Tel = tel;
+        this.tel = tel;
         this.email = email;
         this.obraSocial = obraSocial;
         this.nroAfiliado = nroAfiliado;
-    }
-
-    public int getDNI() {
-        return DNI;
-    }
-
-    public void setDNI(int DNI) {
-        this.DNI = DNI;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getDirec() {
@@ -55,11 +28,11 @@ public class Paciente {
     }
 
     public int getTel() {
-        return Tel;
+        return tel;
     }
 
     public void setTel(int tel) {
-        Tel = tel;
+        this.tel = tel;
     }
 
     public String getEmail() {

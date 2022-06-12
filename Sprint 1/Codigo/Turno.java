@@ -60,20 +60,22 @@ public class Turno {
         for (int i = 0; i < verMedicos(c).size(); i++){
             System.out.println(i+1 + ") " + verMedicos(c).get(i).nombre + ", " + verMedicos(c).get(i).especialidad + ", " + verMedicos(c).get(i).obraSocial);
         }
-        Scanner in = new Scanner (System.in);
-        int s = in.nextInt();
-        Medico m = (verMedicos(c).get(s-1));
-        System.out.println("Dias que atiende: "+ m.dias + ", horarios disponibles: "+ m.horarios);
-        Scanner in2 = new Scanner (System.in);
-        System.out.println("¿Desea confirmar el turno? s/n");
-        String s1 = in2.nextLine();
-        if (!s1.equals("n")){
-            imprimirTurno(m);
-        }else{
-            System.out.println("Turno no confirmado");
-        }
+        try (Scanner in = new Scanner (System.in)) {
+			int s = in.nextInt();
+			Medico m = (verMedicos(c).get(s-1));
+			System.out.println("Dias que atiende: "+ m.dias + ", horarios disponibles: "+ m.horarios);
+			try (Scanner in2 = new Scanner (System.in)) {
+				System.out.println("¿Desea confirmar el turno? s/n");
+				String s1 = in2.nextLine();
+				if (!s1.equals("n")){
+				    imprimirTurno(m);
+				}else{
+				    System.out.println("Turno no confirmado");
+				}
+			}
+		}
     }
     public void imprimirTurno(Medico m){
-        System.out.println(m.dias +" "+ m.horarios +" dni del medico: " +m.DNI);
+        System.out.println(m.dias +" "+ m.horarios +" dni del medico: " +m.dni);
     }
 }
