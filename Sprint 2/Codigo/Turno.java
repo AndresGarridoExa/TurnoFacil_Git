@@ -82,7 +82,7 @@ public class Turno {
 			}
     }
     public void imprimirTurno(Medico m, int t){
-	    System.out.println("Usted tiene turno el: " + );
-	    System.out.println(m.listaTurnos(t) +" dni del medico: " +m.dni);
+	    System.out.println("Usted tiene turno el: " + m.listaTurnos(t));
+	    System.out.println("Con el medico:  " + m.nombre() + ", dni del medico: " + m.dni);
     }
 }
