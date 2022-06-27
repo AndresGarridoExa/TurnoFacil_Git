@@ -1,17 +1,17 @@
+import java.util.ArrayList;
 public class Medico extends Persona {
     String especialidad;
     String obraSocial;
-    String dias; //puede ser lista
-    String horarios; //puede ser lista
+    ArrayList<String> listaTurnos;
+    
 
-    public Medico(int dni, String nombre, String apellido, String especialidad, String obraSocial, String dias, String horarios) {
+    public Medico(int dni, String nombre, String apellido, String especialidad, String obraSocial, ArrayList<String> listaTurnos) {
     	super.dni= dni;
     	super.nombre=nombre;
     	super.apellido=apellido;
         this.especialidad = especialidad;
         this.obraSocial = obraSocial;
-        this.dias = dias;
-        this.horarios = horarios;
+        this.listaTurnos = listaTurnos
     }
 
     public String getObraSocial() {
@@ -44,5 +44,12 @@ public class Medico extends Persona {
 
     public void setHorarios(String horarios) {
         this.horarios = horarios;
+    }
+    public ArrayList<String> getListaTurnos() {
+        return listaTurnos;
+    }
+
+    public void setListaTurnos(ArrayList<String> listaTurnos) {
+        this.listaTurnos = listaTurnos;
     }
 }
