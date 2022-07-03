@@ -8,7 +8,7 @@ public class Medico extends Persona {
     	super.nombre=nombre;
     	super.apellido=apellido;
         this.especialidad = especialidad;
-        this.obraSocial = obraSocial;
+        super.obraSocial = obraSocial;
     }
 
     public String getObraSocial() {
