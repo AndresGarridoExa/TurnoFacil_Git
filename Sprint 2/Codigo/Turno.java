@@ -87,4 +87,5 @@ public class Turno {
             System.out.println("Usted tiene turno el: " + m.listaTurnos.get(t));
             System.out.println("Con el medico:  " + m.nombre + ", dni del medico: " + m.DNI);
         }
-    }
+}
+
