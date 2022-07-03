@@ -1,21 +1,25 @@
+import java.util.ArrayList;
+
 public class Persona {
-	int dni;
+  String dni;
   String nombre;
   String apellido;
-
+  String obraSocial;
+  ArrayList<Turno> listaTurnos;
+  
 public Persona() {}
 
-public Persona(int dni, String nombre, String apellido) {
+public Persona(String dni, String nombre, String apellido) {
     this.dni = dni;
     this.nombre = nombre;
     this.apellido = apellido;
 }
 
-  public int getDni() {
+  public String getDni() {
       return dni;
   }
 
-  public void setDni(int dni) {
+  public void setDni(String dni) {
           this.dni = dni;
   }
 
@@ -35,3 +39,4 @@ public Persona(int dni, String nombre, String apellido) {
       this.apellido = apellido;
   }
 }
+
