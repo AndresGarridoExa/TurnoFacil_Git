@@ -3,7 +3,6 @@ public class Medico extends Persona {
     String especialidad;
     String obraSocial;
     ArrayList<String> listaTurnos;
-    
 
     public Medico(int dni, String nombre, String apellido, String especialidad, String obraSocial, ArrayList<String> listaTurnos) {
     	super.dni= dni;
@@ -11,7 +10,7 @@ public class Medico extends Persona {
     	super.apellido=apellido;
         this.especialidad = especialidad;
         this.obraSocial = obraSocial;
-        this.listaTurnos = listaTurnos
+        this.listaTurnos = listaTurnos;
     }
 
     public String getObraSocial() {
