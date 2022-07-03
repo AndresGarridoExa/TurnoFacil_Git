@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 public class Medico extends Persona {
     String especialidad;
-    String obraSocial;
-    ArrayList<String> listaTurnos;
+   
 
     public Medico(String dni, String nombre, String apellido, String especialidad, String obraSocial) {
     	super.dni= dni;
@@ -28,11 +27,12 @@ public class Medico extends Persona {
         this.especialidad = especialidad;
     }
 
-    public ArrayList<String> getListaTurnos() {
+    public ArrayList<Turno> getListaTurnos() {
         return listaTurnos;
     }
 
-    public void setListaTurnos(ArrayList<String> listaTurnos) {
+    public void setListaTurnos(ArrayList<Turno> listaTurnos) {
         this.listaTurnos = listaTurnos;
     }
 }
+
