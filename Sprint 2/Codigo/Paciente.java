@@ -4,9 +4,7 @@ public class Paciente extends Persona {
     String direc;
     int tel;
     String email;
-    String obraSocial;
     int nroAfiliado;
-    ArrayList<Turno> turnos;
 
     public Paciente(String dni, String nombre, String apellido, String direc, int tel, String email, String obraSocial, int nroAfiliado) {
     	super.dni= dni;
@@ -15,7 +13,7 @@ public class Paciente extends Persona {
         this.direc = direc;
         this.tel = tel;
         this.email = email;
-        this.obraSocial = obraSocial;
+        super.obraSocial = obraSocial;
         this.nroAfiliado = nroAfiliado;
     }
 
@@ -60,11 +58,11 @@ public class Paciente extends Persona {
     }
 
     public ArrayList<Turno> getTurnos() {
-        return turnos;
+        return listaTurnos;
     }
 
     public void setTurnos(ArrayList<Turno> turnos) {
-        this.turnos = turnos;
+        this.listaTurnos = turnos;
     }
 }
 
