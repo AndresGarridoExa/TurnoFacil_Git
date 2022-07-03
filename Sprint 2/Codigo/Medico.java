@@ -4,13 +4,12 @@ public class Medico extends Persona {
     String obraSocial;
     ArrayList<String> listaTurnos;
 
-    public Medico(int dni, String nombre, String apellido, String especialidad, String obraSocial, ArrayList<String> listaTurnos) {
+    public Medico(String dni, String nombre, String apellido, String especialidad, String obraSocial) {
     	super.dni= dni;
     	super.nombre=nombre;
     	super.apellido=apellido;
         this.especialidad = especialidad;
         this.obraSocial = obraSocial;
-        this.listaTurnos = listaTurnos;
     }
 
     public String getObraSocial() {
