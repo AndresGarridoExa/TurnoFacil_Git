@@ -30,21 +30,6 @@ public class Medico extends Persona {
         this.especialidad = especialidad;
     }
 
-    public String getDias() {
-        return dias;
-    }
-
-    public void setDias(String dias) {
-        this.dias = dias;
-    }
-
-    public String getHorarios() {
-        return horarios;
-    }
-
-    public void setHorarios(String horarios) {
-        this.horarios = horarios;
-    }
     public ArrayList<String> getListaTurnos() {
         return listaTurnos;
     }
