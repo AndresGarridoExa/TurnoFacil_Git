@@ -8,7 +8,7 @@ public class Paciente extends Persona {
     int nroAfiliado;
     ArrayList<Turno> turnos;
 
-    public Paciente(int dni, String nombre, String apellido, String direc, int tel, String email, String obraSocial, int nroAfiliado) {
+    public Paciente(String dni, String nombre, String apellido, String direc, int tel, String email, String obraSocial, int nroAfiliado) {
     	super.dni= dni;
     	super.nombre=nombre;
     	super.apellido=apellido;
@@ -67,3 +67,4 @@ public class Paciente extends Persona {
         this.turnos = turnos;
     }
 }
+
