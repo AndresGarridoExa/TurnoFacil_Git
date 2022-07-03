@@ -6,13 +6,13 @@ public class Turno {
 ArrayList<Medico> listaM;
 Date fecha;
 double hora;
-boolean Valido;
+boolean valido;
 
 public Turno(ArrayList<Medico> listaM, Date fecha, double hora, boolean valido) {
     this.listaM = listaM;
     this.fecha = fecha;
     this.hora = hora;
-    Valido = valido;
+    this.valido = valido;
 }
 public ArrayList<Medico> getListaM() {
     return listaM;
@@ -39,11 +39,11 @@ public void setHora(double hora) {
 }
 
 public boolean isValido() {
-    return Valido;
+    return valido;
 }
 
 public void setValido(boolean valido) {
-    Valido = valido;
+	this.valido = valido;
 }
 
 public ArrayList<Medico> verMedicos(Criterio c){
@@ -55,7 +55,9 @@ public ArrayList<Medico> verMedicos(Criterio c){
     }
     return mDisponibles;
 }
-public void sacarTurno(Paciente p,Criterio c){
+
+public void sacarTurno(Paciente p,Criterio c){}
+/*public void sacarTurno(Paciente p,Criterio c){
     System.out.println("Elija un medico: ");
     for (int i = 0; i < verMedicos(c).size(); i++){
         System.out.println(i+1 + ") " + verMedicos(c).get(i).nombre + ", " + verMedicos(c).get(i).especialidad + ", " + verMedicos(c).get(i).obraSocial);
@@ -87,5 +89,5 @@ public void sacarTurno(Paciente p,Criterio c){
     public void imprimirTurno (Medico m, int t){
         System.out.println("Usted tiene turno el: " + m.listaTurnos.get(t));
         System.out.println("Con el medico:  " + m.nombre + ", dni del medico: " + m.DNI);
-    }
+    }*/
 }
