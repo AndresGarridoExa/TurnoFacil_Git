@@ -68,7 +68,6 @@ public void sacarTurno(Paciente p,Criterio c){
         for (int i = 0; i < m.listaTurnos.size(); i++){
             System.out.println(i+1 + ") " + m.listaTurnos.get(i) + " ");
         }
-        //int t = in.nextInt();
         System.out.println(t);
         Scanner in2 = new Scanner (System.in);
             System.out.println("Desea confirmar el turno? s/n");
