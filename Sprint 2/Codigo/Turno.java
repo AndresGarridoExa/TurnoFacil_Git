@@ -56,8 +56,7 @@ public ArrayList<Medico> verMedicos(Criterio c){
     return mDisponibles;
 }
 
-public void sacarTurno(Paciente p,Criterio c){}
-/*public void sacarTurno(Paciente p,Criterio c){
+public void sacarTurno(Paciente p,Criterio c){
     System.out.println("Elija un medico: ");
     for (int i = 0; i < verMedicos(c).size(); i++){
         System.out.println(i+1 + ") " + verMedicos(c).get(i).nombre + ", " + verMedicos(c).get(i).especialidad + ", " + verMedicos(c).get(i).obraSocial);
@@ -89,5 +88,5 @@ public void sacarTurno(Paciente p,Criterio c){}
     public void imprimirTurno (Medico m, int t){
         System.out.println("Usted tiene turno el: " + m.listaTurnos.get(t));
         System.out.println("Con el medico:  " + m.nombre + ", dni del medico: " + m.DNI);
-    }*/
+    }
 }
